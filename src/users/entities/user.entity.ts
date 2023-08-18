@@ -20,7 +20,7 @@ export class Users {
   @Column()
   nickname: string;
 
-  @Column()
+  @Column({ nullable: true })
   profileImage: string;
 
   @CreateDateColumn({ type: 'timestamp' })
